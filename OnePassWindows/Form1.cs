@@ -75,5 +75,10 @@ namespace OnePassWindows
             //调用系统默认的浏览器 
             System.Diagnostics.Process.Start("https://github.com/kaku2015/OnePassWindows/blob/master/donate/donate.md");
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/kaku2015/OnePassWindows");
+        }
     }
 }
