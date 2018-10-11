@@ -47,6 +47,7 @@
             this.Label1 = new System.Windows.Forms.Label();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
@@ -58,7 +59,7 @@
             // PictureBox6
             // 
             this.PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox6.Image")));
-            this.PictureBox6.Location = new System.Drawing.Point(629, 359);
+            this.PictureBox6.Location = new System.Drawing.Point(630, 359);
             this.PictureBox6.Name = "PictureBox6";
             this.PictureBox6.Size = new System.Drawing.Size(30, 36);
             this.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -68,7 +69,7 @@
             // PictureBox5
             // 
             this.PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox5.Image")));
-            this.PictureBox5.Location = new System.Drawing.Point(583, 359);
+            this.PictureBox5.Location = new System.Drawing.Point(584, 359);
             this.PictureBox5.Name = "PictureBox5";
             this.PictureBox5.Size = new System.Drawing.Size(30, 36);
             this.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -78,7 +79,7 @@
             // PictureBox4
             // 
             this.PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox4.Image")));
-            this.PictureBox4.Location = new System.Drawing.Point(537, 359);
+            this.PictureBox4.Location = new System.Drawing.Point(538, 359);
             this.PictureBox4.Name = "PictureBox4";
             this.PictureBox4.Size = new System.Drawing.Size(30, 36);
             this.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +92,7 @@
             this.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button2.Location = new System.Drawing.Point(540, 322);
+            this.Button2.Location = new System.Drawing.Point(541, 322);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(118, 29);
             this.Button2.TabIndex = 30;
@@ -105,7 +106,7 @@
             this.CopyBtn.ForeColor = System.Drawing.Color.White;
             this.CopyBtn.Location = new System.Drawing.Point(107, 331);
             this.CopyBtn.Name = "CopyBtn";
-            this.CopyBtn.Size = new System.Drawing.Size(271, 29);
+            this.CopyBtn.Size = new System.Drawing.Size(228, 29);
             this.CopyBtn.TabIndex = 29;
             this.CopyBtn.Text = "密码生成区(点击复制)";
             this.CopyBtn.UseVisualStyleBackColor = true;
@@ -247,12 +248,27 @@
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(131)))), ((int)(((byte)(119)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(333, 331);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 29);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "配置";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(53)))), ((int)(((byte)(71)))));
-            this.ClientSize = new System.Drawing.Size(671, 408);
+            this.ClientSize = new System.Drawing.Size(673, 409);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.PictureBox6);
             this.Controls.Add(this.PictureBox5);
@@ -306,5 +322,6 @@
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.PictureBox PictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        internal System.Windows.Forms.Button button1;
     }
 }

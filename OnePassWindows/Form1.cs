@@ -80,5 +80,11 @@ namespace OnePassWindows
         {
             System.Diagnostics.Process.Start("https://github.com/kaku2015/OnePassWindows");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            parameter form = new parameter();
+            form.ShowDialog();
+        }
     }
 }
