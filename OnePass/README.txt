@@ -45,8 +45,8 @@
 
 Android 版本下载地址：https://www.coolapk.com/apk/202457
 
+反馈邮箱：FishingNetTech@yeah.net
+
 QQ 交流群：876906641
 
 微信公众号：咖枯视界
-
-反馈邮箱：FishingNetTech@yeah.net

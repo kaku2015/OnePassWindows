@@ -8,7 +8,6 @@ D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.pdb
 D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.Form1.resources
 E:\workspace\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.exe
 E:\workspace\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.pdb
-E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.csprojAssemblyReference.cache
 E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.Form1.resources
 E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.Properties.Resources.resources
 E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.csproj.GenerateResource.cache
@@ -24,3 +23,4 @@ D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.parame
 D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\zu\OnePassWindows.resources.dll
 D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\zu\OnePassWindows.resources.dll
 D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.exe.config
+E:\workspace\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.exe.config
