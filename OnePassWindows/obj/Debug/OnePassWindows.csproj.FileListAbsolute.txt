@@ -1,6 +1,5 @@
 D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.exe
 D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.pdb
-D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.csprojAssemblyReference.cache
 D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.Properties.Resources.resources
 D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.csproj.GenerateResource.cache
 D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.csproj.CoreCompileInputs.cache

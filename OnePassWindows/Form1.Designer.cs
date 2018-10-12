@@ -60,7 +60,7 @@
             // 
             this.PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox6.Image")));
             this.PictureBox6.Location = new System.Drawing.Point(938, 548);
-            this.PictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox6.Name = "PictureBox6";
             this.PictureBox6.Size = new System.Drawing.Size(39, 35);
             this.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -71,7 +71,7 @@
             // 
             this.PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox5.Image")));
             this.PictureBox5.Location = new System.Drawing.Point(892, 548);
-            this.PictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox5.Name = "PictureBox5";
             this.PictureBox5.Size = new System.Drawing.Size(38, 35);
             this.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -82,7 +82,7 @@
             // 
             this.PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox4.Image")));
             this.PictureBox4.Location = new System.Drawing.Point(850, 548);
-            this.PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox4.Name = "PictureBox4";
             this.PictureBox4.Size = new System.Drawing.Size(34, 35);
             this.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -96,7 +96,7 @@
             this.Button2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Button2.Location = new System.Drawing.Point(844, 496);
-            this.Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button2.Margin = new System.Windows.Forms.Padding(4);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(140, 44);
             this.Button2.TabIndex = 30;
@@ -109,7 +109,7 @@
             this.CopyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CopyBtn.ForeColor = System.Drawing.Color.White;
             this.CopyBtn.Location = new System.Drawing.Point(148, 496);
-            this.CopyBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CopyBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CopyBtn.Name = "CopyBtn";
             this.CopyBtn.Size = new System.Drawing.Size(342, 44);
             this.CopyBtn.TabIndex = 29;
@@ -144,7 +144,7 @@
             // 
             this.PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox3.Image")));
             this.PictureBox3.Location = new System.Drawing.Point(36, 369);
-            this.PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox3.Name = "PictureBox3";
             this.PictureBox3.Size = new System.Drawing.Size(76, 82);
             this.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -178,7 +178,7 @@
             this.CodeTb.BackColor = System.Drawing.Color.White;
             this.CodeTb.ForeColor = System.Drawing.SystemColors.InfoText;
             this.CodeTb.Location = new System.Drawing.Point(656, 166);
-            this.CodeTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CodeTb.Margin = new System.Windows.Forms.Padding(4);
             this.CodeTb.Name = "CodeTb";
             this.CodeTb.Size = new System.Drawing.Size(328, 28);
             this.CodeTb.TabIndex = 23;
@@ -199,7 +199,7 @@
             // 
             this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
             this.PictureBox2.Location = new System.Drawing.Point(500, 158);
-            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox2.Name = "PictureBox2";
             this.PictureBox2.Size = new System.Drawing.Size(33, 46);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -211,7 +211,7 @@
             this.MemoryPasswordTb.BackColor = System.Drawing.Color.White;
             this.MemoryPasswordTb.ForeColor = System.Drawing.SystemColors.InfoText;
             this.MemoryPasswordTb.Location = new System.Drawing.Point(126, 166);
-            this.MemoryPasswordTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MemoryPasswordTb.Margin = new System.Windows.Forms.Padding(4);
             this.MemoryPasswordTb.Name = "MemoryPasswordTb";
             this.MemoryPasswordTb.PasswordChar = '*';
             this.MemoryPasswordTb.Size = new System.Drawing.Size(328, 28);
@@ -245,7 +245,7 @@
             // 
             this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
             this.PictureBox1.Location = new System.Drawing.Point(36, 28);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBox1.Name = "PictureBox1";
             this.PictureBox1.Size = new System.Drawing.Size(76, 82);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -274,7 +274,7 @@
             this.button1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(488, 496);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 44);
             this.button1.TabIndex = 36;
@@ -307,6 +307,7 @@
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.PictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "一个密码";
             this.Load += new System.EventHandler(this.Form1_Load);
