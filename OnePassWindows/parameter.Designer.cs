@@ -29,55 +29,77 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(parameter));
-            this.special_symbol = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.password_tb = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.password_tb)).BeginInit();
+            this.with_symbol_cb = new System.Windows.Forms.CheckBox();
+            this.first_capital_letter_cb = new System.Windows.Forms.CheckBox();
+            this.password_length_tv = new System.Windows.Forms.Label();
+            this.password_length_tb = new System.Windows.Forms.TrackBar();
+            this.remember_password_cb = new System.Windows.Forms.CheckBox();
+            this.show_password_cb = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.password_length_tb)).BeginInit();
             this.SuspendLayout();
             // 
-            // special_symbol
+            // with_symbol_cb
             // 
-            resources.ApplyResources(this.special_symbol, "special_symbol");
-            this.special_symbol.ForeColor = System.Drawing.Color.White;
-            this.special_symbol.Name = "special_symbol";
-            this.special_symbol.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.with_symbol_cb, "with_symbol_cb");
+            this.with_symbol_cb.ForeColor = System.Drawing.Color.White;
+            this.with_symbol_cb.Name = "with_symbol_cb";
+            this.with_symbol_cb.UseVisualStyleBackColor = true;
+            this.with_symbol_cb.CheckedChanged += new System.EventHandler(this.with_symbol_CheckedChanged);
             // 
-            // checkBox1
+            // first_capital_letter_cb
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            resources.ApplyResources(this.first_capital_letter_cb, "first_capital_letter_cb");
+            this.first_capital_letter_cb.ForeColor = System.Drawing.Color.White;
+            this.first_capital_letter_cb.Name = "first_capital_letter_cb";
+            this.first_capital_letter_cb.UseVisualStyleBackColor = true;
+            this.first_capital_letter_cb.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label1
+            // password_length_tv
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.password_length_tv, "password_length_tv");
+            this.password_length_tv.ForeColor = System.Drawing.Color.White;
+            this.password_length_tv.Name = "password_length_tv";
             // 
-            // password_tb
+            // password_length_tb
             // 
-            resources.ApplyResources(this.password_tb, "password_tb");
-            this.password_tb.Maximum = 32;
-            this.password_tb.Minimum = 6;
-            this.password_tb.Name = "password_tb";
-            this.password_tb.Value = 16;
+            resources.ApplyResources(this.password_length_tb, "password_length_tb");
+            this.password_length_tb.Maximum = 32;
+            this.password_length_tb.Minimum = 6;
+            this.password_length_tb.Name = "password_length_tb";
+            this.password_length_tb.Value = 16;
+            this.password_length_tb.Scroll += new System.EventHandler(this.password_length_tb_Scroll);
+            // 
+            // remember_password_cb
+            // 
+            resources.ApplyResources(this.remember_password_cb, "remember_password_cb");
+            this.remember_password_cb.ForeColor = System.Drawing.Color.White;
+            this.remember_password_cb.Name = "remember_password_cb";
+            this.remember_password_cb.UseVisualStyleBackColor = true;
+            this.remember_password_cb.CheckedChanged += new System.EventHandler(this.remember_password_cb_CheckedChanged);
+            // 
+            // show_password_cb
+            // 
+            resources.ApplyResources(this.show_password_cb, "show_password_cb");
+            this.show_password_cb.ForeColor = System.Drawing.Color.White;
+            this.show_password_cb.Name = "show_password_cb";
+            this.show_password_cb.UseVisualStyleBackColor = true;
+            this.show_password_cb.CheckedChanged += new System.EventHandler(this.show_emember_password_cb_CheckedChanged);
             // 
             // parameter
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(53)))), ((int)(((byte)(71)))));
-            this.Controls.Add(this.password_tb);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.special_symbol);
+            this.Controls.Add(this.show_password_cb);
+            this.Controls.Add(this.remember_password_cb);
+            this.Controls.Add(this.password_length_tb);
+            this.Controls.Add(this.password_length_tv);
+            this.Controls.Add(this.first_capital_letter_cb);
+            this.Controls.Add(this.with_symbol_cb);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "parameter";
             this.Load += new System.EventHandler(this.parameter_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.password_tb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.password_length_tb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,9 +107,11 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox special_symbol;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TrackBar password_tb;
+        private System.Windows.Forms.CheckBox with_symbol_cb;
+        private System.Windows.Forms.CheckBox first_capital_letter_cb;
+        private System.Windows.Forms.Label password_length_tv;
+        private System.Windows.Forms.TrackBar password_length_tb;
+        private System.Windows.Forms.CheckBox remember_password_cb;
+        private System.Windows.Forms.CheckBox show_password_cb;
     }
 }

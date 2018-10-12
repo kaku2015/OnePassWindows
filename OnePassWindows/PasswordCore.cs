@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,19 @@ namespace OnePassWindows
                 Debug.Print("encryptTwo: " + encryptTwo);
                 StringBuilder result = new StringBuilder(encryptTwo);
 
+                if (ConfigurationManager.AppSettings["with_symbol"] == "1")
+                {
+                    processSomeCharToCharacter(encryptTwo, result);
+                }
                 processSomeCharToNumber(result);
+                if (ConfigurationManager.AppSettings["first_capital_letter"] == "1")
+                {
+                    processFirstCapitalLetterToUpperCase(result);
+                }
 
                 String code32 = result.ToString();
                 String code16;
-                int passwordLength = 16;
+                int passwordLength = int.Parse(ConfigurationManager.AppSettings["password_length"]);
                 code16 = code32.Substring(0, passwordLength);
                 return code16;
             }
@@ -48,6 +57,63 @@ namespace OnePassWindows
                     //                KLog.w("+ / occurs");
                     source[i] = '6';
                 }
+            }
+        }
+
+        private static void processSomeCharToCharacter(String encryptTwo, StringBuilder source)
+        {
+            for (int i = 1; i <= 31; ++i)
+            {
+                if (!Char.IsNumber(source[i]))
+                {
+                    switch (encryptTwo[i])
+                    {
+                        case 'a':
+                        case 'A':
+                            source[i] = '!';
+                            break;
+                        case 'e':
+                        case 'E':
+                            source[i] = '@';
+                            break;
+                        case 'i':
+                        case 'I':
+                            source[i] = '#';
+                            break;
+                        case 'm':
+                        case 'M':
+                            source[i] = '$';
+                            break;
+                        case 'q':
+                        case 'Q':
+                            source[i] = '%';
+                            break;
+                        case 'u':
+                        case 'U':
+                            source[i] = '^';
+                            break;
+                        case 'y':
+                        case 'Y':
+                            source[i] = '&';
+                            break;
+                        case 'z':
+                            source[i] = '*';
+                            break;
+                    }
+                }
+            }
+        }
+
+        private static void processFirstCapitalLetterToUpperCase(StringBuilder result)
+        {
+            char code1 = result[0];
+            if (Char.IsNumber(code1))
+            {
+                result[0] = 'M';
+            }
+            else if (Char.IsLower(code1))
+            {
+                result[0] = Char.ToUpper(code1);
             }
         }
 

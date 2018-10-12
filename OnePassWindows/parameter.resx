@@ -118,124 +118,211 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="special_symbol.AutoSize" type="System.Boolean, mscorlib">
+  <data name="with_symbol_cb.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="special_symbol.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="with_symbol_cb.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="special_symbol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 25</value>
+  <data name="with_symbol_cb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 38</value>
   </data>
-  <data name="special_symbol.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 16</value>
+  <data name="with_symbol_cb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="special_symbol.TabIndex" type="System.Int32, mscorlib">
+  <data name="with_symbol_cb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
+  <data name="with_symbol_cb.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="special_symbol.Text" xml:space="preserve">
+  <data name="with_symbol_cb.Text" xml:space="preserve">
     <value>特殊符号</value>
   </data>
-  <data name="&gt;&gt;special_symbol.Name" xml:space="preserve">
-    <value>special_symbol</value>
+  <data name="&gt;&gt;with_symbol_cb.Name" xml:space="preserve">
+    <value>with_symbol_cb</value>
   </data>
-  <data name="&gt;&gt;special_symbol.Type" xml:space="preserve">
+  <data name="&gt;&gt;with_symbol_cb.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;special_symbol.Parent" xml:space="preserve">
+  <data name="&gt;&gt;with_symbol_cb.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;special_symbol.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;with_symbol_cb.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="first_capital_letter_cb.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="checkBox1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="first_capital_letter_cb.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 64</value>
+  <data name="first_capital_letter_cb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 96</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 16</value>
+  <data name="first_capital_letter_cb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="first_capital_letter_cb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="first_capital_letter_cb.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
+  <data name="first_capital_letter_cb.Text" xml:space="preserve">
     <value>首位大写字母</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="&gt;&gt;first_capital_letter_cb.Name" xml:space="preserve">
+    <value>first_capital_letter_cb</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;first_capital_letter_cb.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;first_capital_letter_cb.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 105</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 12</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>密码长度[16]</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="password_tb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 101</value>
-  </data>
-  <data name="password_tb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 45</value>
-  </data>
-  <data name="password_tb.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;first_capital_letter_cb.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;password_tb.Name" xml:space="preserve">
-    <value>password_tb</value>
+  <data name="password_length_tv.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;password_tb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="password_length_tv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 158</value>
   </data>
-  <data name="&gt;&gt;password_tb.Parent" xml:space="preserve">
+  <data name="password_length_tv.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="password_length_tv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 18</value>
+  </data>
+  <data name="password_length_tv.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="password_length_tv.Text" xml:space="preserve">
+    <value>密码长度[16]</value>
+  </data>
+  <data name="&gt;&gt;password_length_tv.Name" xml:space="preserve">
+    <value>password_length_tv</value>
+  </data>
+  <data name="&gt;&gt;password_length_tv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;password_length_tv.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;password_tb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;password_length_tv.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="password_length_tb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 152</value>
+  </data>
+  <data name="password_length_tb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="password_length_tb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 69</value>
+  </data>
+  <data name="password_length_tb.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;password_length_tb.Name" xml:space="preserve">
+    <value>password_length_tb</value>
+  </data>
+  <data name="&gt;&gt;password_length_tb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;password_length_tb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;password_length_tb.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="remember_password_cb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="remember_password_cb.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="remember_password_cb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="remember_password_cb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 267</value>
+  </data>
+  <data name="remember_password_cb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="remember_password_cb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="remember_password_cb.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="remember_password_cb.Text" xml:space="preserve">
+    <value>记住记忆密码</value>
+  </data>
+  <data name="&gt;&gt;remember_password_cb.Name" xml:space="preserve">
+    <value>remember_password_cb</value>
+  </data>
+  <data name="&gt;&gt;remember_password_cb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;remember_password_cb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;remember_password_cb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="show_password_cb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="show_password_cb.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="show_password_cb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="show_password_cb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 211</value>
+  </data>
+  <data name="show_password_cb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="show_password_cb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
+  <data name="show_password_cb.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="show_password_cb.Text" xml:space="preserve">
+    <value>显示密码</value>
+  </data>
+  <data name="&gt;&gt;show_password_cb.Name" xml:space="preserve">
+    <value>show_password_cb</value>
+  </data>
+  <data name="&gt;&gt;show_password_cb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;show_password_cb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;show_password_cb.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>9, 18</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>288, 199</value>
+    <value>413, 320</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

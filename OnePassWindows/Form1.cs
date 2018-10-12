@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,9 +13,24 @@ namespace OnePassWindows
     public partial class Form1 : Form
     {
         private String mGenerateCode;
+        private bool mIsRememberPassword;
+
         public Form1()
         {
             InitializeComponent();
+            mIsRememberPassword = ConfigurationManager.AppSettings["remember_password"] == "1";
+            if (mIsRememberPassword)
+            {
+                MemoryPasswordTb.Text = ConfigurationManager.AppSettings["memory_password"];
+            }
+
+            setShowPassword();
+        }
+
+        private void setShowPassword()
+        {
+            bool isShowPassword = ConfigurationManager.AppSettings["show_password"] == "1";
+            MemoryPasswordTb.PasswordChar = isShowPassword ? '\0' : '*';
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -51,6 +67,10 @@ namespace OnePassWindows
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (mIsRememberPassword)
+            {
+                CodeTb.TabIndex = 1;
+            }
 
         }
 
@@ -61,11 +81,23 @@ namespace OnePassWindows
                 return;
             }
 
+            String oldPassword = ConfigurationManager.AppSettings["memory_password"];
+            if (!String.IsNullOrEmpty(oldPassword) && oldPassword != MemoryPasswordTb.Text)
+            {
+                MessageBox.Show("您此次输入的记忆密码与最近一次输入的记忆密码不同，请检查一下输入是否正确。我们建议使用相同的记忆密码，以避免出现忘记密码、记忆混乱的问题。");
+            }
+
             processCopy();
         }
 
         private void processCopy()
         {
+            String oldPassword = ConfigurationManager.AppSettings["memory_password"];
+            if (String.IsNullOrEmpty(oldPassword) || oldPassword != MemoryPasswordTb.Text)
+            {
+                saveParameter("memory_password", MemoryPasswordTb.Text);
+            }
+
             Clipboard.SetDataObject(mGenerateCode);
 
         }
@@ -84,7 +116,26 @@ namespace OnePassWindows
         private void button1_Click(object sender, EventArgs e)
         {
             parameter form = new parameter();
+            form.DataChange += new parameter.DataChangeHandler(DataChanged);
             form.ShowDialog();
+        }
+
+        public void DataChanged(object sender, DataChangeEventArgs args)
+        {
+            if ( 0  == args.mType)
+            {
+                updateCode();
+            } else if (1 == args.mType) {
+                setShowPassword();
+            }
+        }
+
+        private void saveParameter(String name, String value)
+        {
+            Configuration cfg = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            cfg.AppSettings.Settings[name].Value = value;
+            cfg.Save();
+            ConfigurationManager.RefreshSection("appSettings");
         }
     }
 }

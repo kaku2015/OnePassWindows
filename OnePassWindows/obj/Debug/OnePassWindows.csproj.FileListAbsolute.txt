@@ -20,3 +20,8 @@ E:\workspace\OnePassWindows\OnePassWindows\bin\Debug\zu\OnePassWindows.resources
 E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\zu\OnePassWindows.resources.dll
 E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.parameter.resources
 E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.parameter.zu.resources
+D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.parameter.resources
+D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.parameter.zu.resources
+D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\zu\OnePassWindows.resources.dll
+D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\zu\OnePassWindows.resources.dll
+D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.exe.config
