@@ -42,8 +42,7 @@ namespace OnePassWindows
             }
             catch (Exception e)
             {
-                throw new Exception(String.Format(
-                        "Error occured while encrypting password \"%s\" with key \"%s\"", passwordText, codeText), e);
+                throw new Exception("Error occured while encrypting password " + passwordText + " with code " + codeText, e);
             }
         }
 

@@ -60,7 +60,7 @@ namespace OnePassWindows
                 catch (Exception e)
                 {
                     CopyBtn.Text = "密码生成区(点击复制)";
-                    MessageBox.Show(e.Message);
+                    MessageBox.Show(e.Message + ": " + e.InnerException);
                 }
             }
         }
@@ -122,10 +122,12 @@ namespace OnePassWindows
 
         public void DataChanged(object sender, DataChangeEventArgs args)
         {
-            if ( 0  == args.mType)
+            if (0 == args.mType)
             {
                 updateCode();
-            } else if (1 == args.mType) {
+            }
+            else if (1 == args.mType)
+            {
                 setShowPassword();
             }
         }

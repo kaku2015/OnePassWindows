@@ -24,4 +24,3 @@ D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\zu\OnePassWindows.res
 D:\android_library\OnePassWindows\OnePassWindows\obj\Debug\zu\OnePassWindows.resources.dll
 D:\android_library\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.exe.config
 E:\workspace\OnePassWindows\OnePassWindows\bin\Debug\OnePassWindows.exe.config
-E:\workspace\OnePassWindows\OnePassWindows\obj\Debug\OnePassWindows.csprojAssemblyReference.cache
