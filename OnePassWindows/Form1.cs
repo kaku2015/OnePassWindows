@@ -5,6 +5,8 @@ using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Windows.Forms;
 
@@ -14,10 +16,30 @@ namespace OnePassWindows
     {
         private String mGenerateCode;
         private bool mIsRememberPassword;
+        private ResourceManager resourceManager;
+        private bool isEn = true;
 
         public Form1()
         {
             InitializeComponent();
+
+
+            if (isEn)
+            {
+                resourceManager = new ResourceManager(
+                Resource.ResourceManager.BaseName, Assembly.GetExecutingAssembly());
+            }
+            else
+            {
+                resourceManager = new ResourceManager(
+                Resource_zh_CN.ResourceManager.BaseName, Assembly.GetExecutingAssembly());
+            }
+            //只需修改str的值就可以获取不同的语言
+            //  string str = "zh-CN";//CultureInfo.CurrentUICulture.Name;
+            //en-US    zh-CN
+            //  System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(str);
+
+
             mIsRememberPassword = ConfigurationManager.AppSettings["remember_password"] == "1";
             if (mIsRememberPassword)
             {
@@ -25,6 +47,26 @@ namespace OnePassWindows
             }
 
             setShowPassword();
+
+
+            input_tv.Text = resourceManager.GetString("input");
+            get_tv.Text = resourceManager.GetString("get");
+            memory_password_tv.Text = resourceManager.GetString("memory_password");
+            code_tv.Text = resourceManager.GetString("code_number");
+            memory_password_msg_tv.Text = resourceManager.GetString("use_explanation1");
+            code_mag_tv.Text = resourceManager.GetString("use_explanation2");
+            strong_password_tv.Text = resourceManager.GetString("strong_password");
+            CopyBtn.Text = resourceManager.GetString("code_generate_area");
+            settings_tv.Text = resourceManager.GetString("setting");
+            open_source_ltv.Text = resourceManager.GetString("open_source");
+
+            if (isEn)
+            {
+                donate_btn.Visible = false;
+                wechat_iv.Visible = false;
+                alipay_iv.Visible = false;
+                qq_iv.Visible = false;
+            }
         }
 
         private void setShowPassword()
@@ -47,7 +89,7 @@ namespace OnePassWindows
         {
             if (String.IsNullOrEmpty(MemoryPasswordTb.Text) || String.IsNullOrEmpty(CodeTb.Text))
             {
-                CopyBtn.Text = "密码生成区(点击复制)";
+                CopyBtn.Text = resourceManager.GetString("code_generate_area");
             }
             else
             {
@@ -59,7 +101,7 @@ namespace OnePassWindows
                 }
                 catch (Exception e)
                 {
-                    CopyBtn.Text = "密码生成区(点击复制)";
+                    CopyBtn.Text = resourceManager.GetString("code_generate_area");
                     MessageBox.Show(e.Message + ": " + e.InnerException);
                 }
             }
@@ -84,8 +126,7 @@ namespace OnePassWindows
             String oldPassword = ConfigurationManager.AppSettings["memory_password"];
             if (!String.IsNullOrEmpty(oldPassword) && oldPassword != MemoryPasswordTb.Text)
             {
-                MessageBox.Show("您此次输入的记忆密码与最近一次输入的记忆密码不同，请检查一下输入是否正确。我们建议使用相同的记忆密码，以避免出现忘记密码、记忆混乱的问题。");
-            }
+                MessageBox.Show(resourceManager.GetString("different_password_msg"));            }
 
             processCopy();
         }
@@ -110,7 +151,14 @@ namespace OnePassWindows
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/kaku2015/OnePassWindows");
+            if (isEn)
+            {
+                System.Diagnostics.Process.Start("https://github.com/kaku2015/OnePassWindows/tree/master/OnePassWindows");
+            }
+            else
+            {
+                System.Diagnostics.Process.Start("https://github.com/kaku2015/OnePassWindows");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

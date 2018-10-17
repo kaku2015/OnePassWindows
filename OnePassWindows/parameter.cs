@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Resources;
+using System.Reflection;
 
 namespace OnePassWindows
 {
@@ -26,18 +28,35 @@ namespace OnePassWindows
                 DataChange(this, args);
             }
         }
-
+        private ResourceManager resourceManager;
+        private bool isEn = true;
         public parameter()
         {
             InitializeComponent();
- 
+        
+            if (isEn)
+            {
+                resourceManager = new ResourceManager(
+                Resource.ResourceManager.BaseName, Assembly.GetExecutingAssembly());
+            }
+            else
+            {
+                resourceManager = new ResourceManager(
+                Resource_zh_CN.ResourceManager.BaseName, Assembly.GetExecutingAssembly());
+            }
+
             with_symbol_cb.Checked = ConfigurationManager.AppSettings["with_symbol"] == "1";
             first_capital_letter_cb.Checked = ConfigurationManager.AppSettings["first_capital_letter"] == "1";
             remember_password_cb.Checked = ConfigurationManager.AppSettings["remember_password"] == "1";
             show_password_cb.Checked = ConfigurationManager.AppSettings["show_password"] == "1";
 
-            password_length_tb.Value = int.Parse(ConfigurationManager.AppSettings["password_length"]);
-            password_length_tv.Text = "密码长度[" + ConfigurationManager.AppSettings["password_length"] + "]";
+           password_length_tb.Value = int.Parse(ConfigurationManager.AppSettings["password_length"]);
+            password_length_tv.Text = resourceManager.GetString("password_length_value") + ConfigurationManager.AppSettings["password_length"] + "]";
+            with_symbol_cb.Text = resourceManager.GetString("with_character");
+            first_capital_letter_cb.Text = resourceManager.GetString("first_capital_letter");
+            remember_password_cb.Text = resourceManager.GetString("remember_password");
+            show_password_cb.Text = resourceManager.GetString("show_password");
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -72,9 +91,10 @@ namespace OnePassWindows
 
         private void password_length_tb_Scroll(object sender, EventArgs e)
         {
-          password_length_tv.Text = "密码长度[" + password_length_tb.Value + "]";
-          saveParameter("password_length", password_length_tb.Value + "");
+            password_length_tv.Text = resourceManager.GetString("password_length_value") + password_length_tb.Value + "]";
+            saveParameter("password_length", password_length_tb.Value + "");
             OnDataChange(this, new DataChangeEventArgs(0));
+
         }
 
         private void show_emember_password_cb_CheckedChanged(object sender, EventArgs e)
