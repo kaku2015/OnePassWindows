@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace OnePassWindows
 {
-    public partial class Form1 : Form
+    public partial class enter_tv : Form
     {
         private String mGenerateCode;
         private bool mIsRememberPassword;
         private ResourceManager resourceManager;
         private bool isEn = true;
 
-        public Form1()
+        public enter_tv()
         {
             InitializeComponent();
 
@@ -49,7 +49,7 @@ namespace OnePassWindows
             setShowPassword();
 
 
-            input_tv.Text = resourceManager.GetString("input");
+            input.Text = resourceManager.GetString("input");
             get_tv.Text = resourceManager.GetString("get");
             memory_password_tv.Text = resourceManager.GetString("memory_password");
             code_tv.Text = resourceManager.GetString("code_number");
