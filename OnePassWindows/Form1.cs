@@ -136,7 +136,10 @@ namespace OnePassWindows
             String oldPassword = ConfigurationManager.AppSettings["memory_password"];
             if (String.IsNullOrEmpty(oldPassword) || oldPassword != MemoryPasswordTb.Text)
             {
-                saveParameter("memory_password", MemoryPasswordTb.Text);
+                if (mIsRememberPassword)
+                {
+                    saveParameter("memory_password", MemoryPasswordTb.Text);
+                }
             }
 
             Clipboard.SetDataObject(mGenerateCode);

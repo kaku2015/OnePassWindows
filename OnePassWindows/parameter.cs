@@ -87,6 +87,10 @@ namespace OnePassWindows
         private void remember_password_cb_CheckedChanged(object sender, EventArgs e)
         {
             saveParameter("remember_password", remember_password_cb.CheckState == CheckState.Checked ? "1" : "0");
+            if (remember_password_cb.CheckState != CheckState.Checked)
+            {
+                saveParameter("memory_password", "");
+            }
         }
 
         private void password_length_tb_Scroll(object sender, EventArgs e)
